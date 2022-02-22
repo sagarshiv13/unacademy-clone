@@ -9,3 +9,38 @@
   width: 100%;
   height: 100%;
 }
+.top-btn-div{
+  text-align: center;
+  padding-top: 30px;
+ 
+}
+.top-btn{
+    background-color: #003c8f;
+}
+.top-btn-text {
+  color: white;
+}
+.top-heading-text {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150%;
+    z-index: 2;
+}
+.top-subheading-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #7A8B94;
+    margin: 0px;
+    font-weight: normal;
+    line-height: 150%;
+}
+.css-1cd5uh1-StyledButton-SubButton {
+    position: relative;
+    border-color:#08bd80;
+    background-color: #08bd80;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    font-weight: bold;
+}
