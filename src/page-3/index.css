@@ -67,14 +67,10 @@
   width: 100%;
   position: relative;
   margin-top: 60px;
-  
 }
 .second-section > div {
   border-left: 72px solid transparent;
   border-right: 72px solid transparent;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .second-section > div h2 {
   text-align: center;
@@ -136,4 +132,128 @@
 }
 .pricing-item2 h4 {
   color: green;
+}
+/* ...Third section */
+.third-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.third-section-first-box-item1 {
+  flex-grow: 1;
+  max-width: 50%;
+}
+.third-section-first-box-item1 h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  color: #3c4852;
+  margin: 0px;
+  line-height: 120%;
+  font-size: 40px;
+  text-align: center;
+}
+.third-section-first-box-item2 {
+  flex-grow: 1;
+}
+.third-section-first-box-item2 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0px;
+  font-size: 32px;
+  margin-top: 40px;
+}
+.fourth-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+.fourth-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.fourth-section h1 {
+  font-weight: bold;
+  line-height: 120%;
+  margin: 0px;
+  font-size: 40px;
+  text-align: center;
+}
+.course-fee {
+  font-size: large;
+  font-weight: bold;
+  padding: 5%;
+  text-align: center;
+}
+.course-fee p {
+  width: 15%;
+  line-height: 200%;
+  margin: auto;
+  padding: 8% 3% 8% 3%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.course-fee p button {
+  padding: 10px;
+  color: green;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.fourth-section h4 {
+  text-align: center;
+}
+
+.fifth-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+.fifth-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+  
+}
+.fifth-section-first-box {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.block4 {
+  height: 403px;
+  width: 80vw;
+  margin-top: 112px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+}
+
+.block411 {
+  color: #3c4852;
+  font-size: 40px;
+  margin-left: 24px;
+  margin-top: 97px;
+  font-weight: bold;
+}
+.block412 {
+  color: #3c4852;
+  font-size: 18px;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+.block413 {
+  margin-top: 32px;
+  margin-left: 24px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-column-gap: 6%;
+}
+.block413 img {
+  width: 100%;
+  height: 40px;
+}
+.block42 img {
+  width: 100%;
+  height: 399px;
 }
