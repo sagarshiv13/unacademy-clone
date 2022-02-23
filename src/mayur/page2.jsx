@@ -2,10 +2,10 @@
 import "../mayur/style/page2.css"
 import { Page2Top } from "./style/page2top"
 
-import {Link} from "react-router-dom"
+
+
 export const PageTwo=()=>{
-
-
+ 
 
 
 
@@ -17,38 +17,39 @@ export const PageTwo=()=>{
             <div id="leftside">
                 <div id="page2list">
                     <ul>
-                         <li className="leftbar"> <a href="#Full-Stack-Development">Full Stack Development</a></li>
-                         <li className="leftbar"> <a href="#UPSC CSE">UPSC CSE </a></li>
-                        <li className="leftbar"> <a href="#Govt Exams">Govt Exams</a></li>
-                        <li className="leftbar"> <a href="#Defence Exams">Defence Exams</a></li>
-                        <li className="leftbar"> <a href="#JEE and NEET Preparation">JEE and NEET Preparation</a></li>
-                        <li className="leftbar"> <a href="#State PSC">State PSC</a></li>
-                        <li className="leftbar"> <a href="#NET Exams">NET Exams</a></li>
-                        <li className="leftbar"> <a href="#GATE, ESE and IIT-JAM">GATE, ESE and IIT-JAM</a></li> 
-                        <li className="leftbar"> <a href="#NEET PG">NEET PG</a></li>
-                        <li className="leftbar"> <a href="#Teaching Exams(TET)">Teaching Exams(TET) </a></li>
-                        <li className="leftbar"> <a href="#CAT & Other MBA Entrance Tests">CAT & Other MBA Entrance Tests</a></li>
-                        <li className="leftbar"> <a href="#CA">CA</a></li>
-                        <li className="leftbar"> <a href="#State CET">State CET</a></li>
-                        <li className="leftbar"> <a href="#CLAT & Other Law Entrance Exams">CLAT & Other Law Entrance Exams</a></li>
-                        <li className="leftbar"> <a href="#Judiciary Exams">Judiciary Exams</a></li>
-                        <li className="leftbar"> <a href="#CS">CS</a></li>
-                        <li className="leftbar"> <a href="#Foreign Studies">Foreign Studies</a></li>
-                        <li className="leftbar"> <a href="#IPMAT/BBA and Hotel Management">IPMAT/BBA and Hotel Management</a></li>
-                        <li className="leftbar"> <a href="#IITJEE/NEET Foundation & NTSE">IITJEE/NEET Foundation & NTSE</a></li>
-                        <li className="leftbar"> <a href="#CMA">CMA</a></li>
-                        <li className="leftbar"> <a href="#CUCET">CUCET</a></li>
-                        <li className="leftbar"> <a href="#Campus Placement - IT Jobs">Campus Placement - IT Jobs</a></li>
-                        <li className="leftbar"> <a href="#Programming for Students">Programming for Students</a></li>
-                        <li className="leftbar"> <a href="#CBSE">CBSE</a></li>
-                        <li className="leftbar"> <a href="#Maharashtra State Board">Maharashtra State Board</a></li>
-                        <li className="leftbar"> <a href="#ICSE">ICSE</a></li>
-                        <li className="leftbar"> <a href="#Tamil Nadu Board">Tamil Nadu Board</a></li>
-                        <li className="leftbar"> <a href="#JEE and NEET Preparation">JEE and NEET Preparation</a></li>
-                        <li className="leftbar"> <a href="#IITJEE/NEET Foundation & NTSE">IITJEE/NEET Foundation & NTSE</a></li>
-                        <li className="leftbar"> <a href="#INTERNATIONAL">INTERNATIONAL</a></li>
-                        <li className="leftbar"> <a href="#USMLE">USMLE</a></li>
-                        <li className="leftbar"> <a href="#NCLEX®">NCLEX®</a></li>
+                         <li className="leftbar" > <a href="#1"   >Full Stack Development</a></li>
+                         <li className="leftbar"> <a href="#2">Campus Placement - IT Jobs</a></li>
+                        <li className="leftbar"> <a href="#3">Programming for Students</a></li>
+
+                         <li className="leftbar"> <a href="#4">UPSC CSE </a></li>
+                        <li className="leftbar"> <a href="#5">Govt Exams</a></li>
+                        <li className="leftbar"> <a href="#6">Defence Exams</a></li>
+                        <li className="leftbar"> <a href="#7">JEE and NEET Preparation</a></li>
+                        <li className="leftbar"> <a href="#8">State PSC</a></li>
+                        <li className="leftbar"> <a href="#9">NET Exams</a></li>
+                        <li className="leftbar"> <a href="#10">GATE, ESE and IIT-JAM</a></li> 
+                        <li className="leftbar"> <a href="#11">NEET PG</a></li>
+                        <li className="leftbar"> <a href="#12">Teaching Exams(TET) </a></li>
+                        <li className="leftbar"> <a href="#13">CAT & Other MBA Entrance Tests</a></li>
+                        <li className="leftbar"> <a href="#14">CA</a></li>
+                        <li className="leftbar"> <a href="#15">State CET</a></li>
+                        <li className="leftbar"> <a href="#16">CLAT & Other Law Entrance Exams</a></li>
+                        <li className="leftbar"> <a href="#17">Judiciary Exams</a></li>
+                        <li className="leftbar"> <a href="#18">CS</a></li>
+                        <li className="leftbar"> <a href="#19">Foreign Studies</a></li>
+                        <li className="leftbar"> <a href="#20">IPMAT/BBA and Hotel Management</a></li>
+                        <li className="leftbar"> <a href="#21">IITJEE/NEET Foundation & NTSE</a></li>
+                        <li className="leftbar"> <a href="#22">CMA</a></li>
+                        <li className="leftbar"> <a href="#23">CUCET</a></li>
+                        <li className="leftbar"> <a href="#24">CBSE</a></li>
+                        <li className="leftbar"> <a href="#25">Maharashtra State Board</a></li>
+                        <li className="leftbar"> <a href="#26">ICSE</a></li>
+                        <li className="leftbar"> <a href="#27">Tamil Nadu Board</a></li>
+                        <li className="leftbar"> <a href="#28">JEE and NEET Preparation</a></li>
+                        <li className="leftbar"> <a href="#29">IITJEE/NEET Foundation & NTSE</a></li>
+                        {/* <li className="leftbar"> <a href="#30">INTERNATIONAL</a></li> */}
+                        <li className="leftbar"> <a href="#30">USMLE</a></li>
+                        <li className="leftbar"> <a href="#31">NCLEX®</a></li>
                       
 
 
@@ -63,7 +64,7 @@ export const PageTwo=()=>{
             <div id="rightside">
 
                 {/* -----------------------------------------------Full Stack Development-------------------------------------------------- 1*/}
-            <p id="Full-Stack-Development" className="pcorse">Full Stack Development</p>
+            <p id="1" className="pcorse">Full Stack Development</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -75,8 +76,39 @@ export const PageTwo=()=>{
                      
                      
                     </div>
+
+                      {/* 19 ---------------------------------------------Campus Placement - IT Jobs--------------------------------------------------  1*/}
+                      <p id="2" className="pcorse"> Campus Placement - IT Jobs</p>
+                    <div  className="crosetabss" >
+                       
+                        <div className="corsetab">
+                            <div><img className="corseimg" src="https://static.uacdn.net/topology/LEARNCP/icon/origin.png" alt="" />
+                            <h5 className="corsetitle">Campus Placement- IT Jobs</h5>
+                            </div>
+                            
+                        </div>
+                   
+                              
+                      
+                    </div>
+
+
+                 {/* 20 ---------------------------------------------Programming for Students-------------------------------------------------  1*/}
+             <p id="3" className="pcorse"> Programming for Students</p>
+                    <div  className="crosetabss" >
+                       
+                        <div className="corsetab">
+                            <div><img className="corseimg" src="https://static.uacdn.net/topology/test_default.png" alt="" />
+                            <h5 className="corsetitle">Programming for Students</h5>
+                            </div>
+                            
+                        </div>
+                   
+                              
+                      
+                    </div>                   
 {/* -----------------------------------------------UPSC CSE-------------------------------------------------- ----------------2*/}
-            <p id="UPSC CSE" className="pcorse">UPSC CSE</p>
+            <p id="4" className="pcorse">UPSC CSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -95,7 +127,7 @@ export const PageTwo=()=>{
 
 
                     {/* -----------------------------------------------Govt Exams--------------------------------------------------  4*/}
-             <p id="Govt Exams" className="pcorse">Govt Exams</p>
+             <p id="5" className="pcorse">Govt Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -125,7 +157,7 @@ export const PageTwo=()=>{
                     </div>
 
                             {/* -----------------------------------------------Defence Exams--------------------------------------------------  4*/}
-             <p id="Defence Exams"  className="pcorse">Defence Exams</p>
+             <p id="6"  className="pcorse">Defence Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -156,7 +188,7 @@ export const PageTwo=()=>{
 
 
                                {/* 4 -----------------------------------------------JEE and NEET Preparation--------------------------------------------------  2*/}
-                <p id="JEE and NEET Preparation" className="pcorse">JEE and NEET Preparation</p>
+                <p id="7" className="pcorse">JEE and NEET Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -176,7 +208,7 @@ export const PageTwo=()=>{
 
 
                  {/* 5-----------------------------------------------State PSC--------------------------------------------------  32*/}
-             <p id="State PSC" className="pcorse">State PSC</p>
+             <p id="8" className="pcorse">State PSC</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -439,7 +471,7 @@ export const PageTwo=()=>{
                     </div>
 
                     {/* 6 -----------------------------------------------NET Exams--------------------------------------------------  2*/}
-            <p id="NET Exams Preparation" className="pcorse">NET Exams Preparation</p>
+            <p id="9" className="pcorse">NET Exams Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -458,7 +490,7 @@ export const PageTwo=()=>{
                     </div>            
                     
                     {/* 7 -----------------------------------------------GATE, ESE and IIT-JAM--------------------------------------------------  3*/}
-            <p id="GATE, ESE and IIT-JAM" className="pcorse">GATE, ESE and IIT-JAM</p>
+            <p id="10" className="pcorse">GATE, ESE and IIT-JAM</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -483,7 +515,7 @@ export const PageTwo=()=>{
                     </div>    
 
                     {/* 8 -----------------------------------------------NEET PG--------------------------------------------------  1*/}
-            <p id="NEET PG" className="pcorse">NEET PG</p>
+            <p id="11" className="pcorse">NEET PG</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -498,7 +530,7 @@ export const PageTwo=()=>{
 
 
                        {/* 8 -----------------------------------------------Teaching Exams (TET)--------------------------------------------------  2*/}
-            <p id="Teaching Exams (TET)" className="pcorse">Teaching Exams (TET)</p>
+            <p id="12" className="pcorse">Teaching Exams (TET)</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -516,7 +548,7 @@ export const PageTwo=()=>{
                       
                     </div>  
                      {/* 9 -----------------------------------------------CAT & Other MBA Entrance Tests--------------------------------------------------  3*/}
-             <p id="CAT & Other MBA Entrance Tests" className="pcorse">CAT & Other MBA Entrance Tests</p>
+             <p id="13" className="pcorse">CAT & Other MBA Entrance Tests</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -542,7 +574,7 @@ export const PageTwo=()=>{
 
 
                   {/* 10 -----------------------------------------------CA--------------------------------------------------  4*/}
-            <p id="CA" className="pcorse">CA</p>
+            <p id="14" className="pcorse">CA</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -574,7 +606,7 @@ export const PageTwo=()=>{
 
 
                      {/* 11 -----------------------------------------------State CET--------------------------------------------------  4*/}
-            <p id="State CET" className="pcorse">State CET</p>
+            <p id="15" className="pcorse">State CET</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -602,7 +634,7 @@ export const PageTwo=()=>{
 
 
                  {/* 12 ----------------------------------------------CLAT & Other Law Entrance Exams--------------------------------------------------  1*/}
-            <p id="CLAT & Other Law Entrance Exams" className="pcorse">CLAT & Other Law Entrance Exams</p>
+            <p id="16" className="pcorse">CLAT & Other Law Entrance Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -618,7 +650,7 @@ export const PageTwo=()=>{
 
 
          {/* 13 ----------------------------------------------Judiciary Exams--------------------------------------------------  1*/}
-         <p id="Judiciary Exams" className="pcorse">Judiciary Exams</p>
+         <p id="17" className="pcorse">Judiciary Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -635,7 +667,7 @@ export const PageTwo=()=>{
 
 
                      {/* 14 ----------------------------------------------CS--------------------------------------------------  1*/}
-         <p id="CS" className="pcorse">CS</p>
+         <p id="18" className="pcorse">CS</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -664,7 +696,7 @@ export const PageTwo=()=>{
                     </div>  
 
                          {/* 15 ----------------------------------------------Foreign Studies--------------------------------------------------  2*/}
-            <p id="Foreign Studies" className="pcorse">Foreign Studies</p>
+            <p id="19" className="pcorse">Foreign Studies</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -686,7 +718,7 @@ export const PageTwo=()=>{
                     </div>    
 
                          {/* 16 ----------------------------------------------IPMAT/BBA and Hotel Management--------------------------------------------------  1*/}
-             <p id="IPMAT/BBA and Hotel Management" className="pcorse">IPMAT/BBA and Hotel Management</p>
+             <p id="20" className="pcorse">IPMAT/BBA and Hotel Management</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -701,7 +733,7 @@ export const PageTwo=()=>{
 
 
               {/* 17 ----------------------------------------------IITJEE/NEET Foundation & NTSE--------------------------------------------------  1*/}
-            <p id="IITJEE/NEET Foundation & NTSE" className="pcorse">IITJEE/NEET Foundation & NTSE</p>
+            <p id="21" className="pcorse">IITJEE/NEET Foundation & NTSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -715,7 +747,7 @@ export const PageTwo=()=>{
                     </div>  
 
                       {/* 18 ---------------------------------------------CMA--------------------------------------------------  3*/}
-            <p id="CMA" className="pcorse"> CMA</p>
+            <p id="22" className="pcorse"> CMA</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -741,7 +773,7 @@ export const PageTwo=()=>{
                     </div>   
 
             {/* 18 ---------------------------------------------CUCET--------------------------------------------------  1*/}
-             <p id="CUCET" className="pcorse"> CUCET</p>
+             <p id="23" className="pcorse"> CUCET</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -755,39 +787,10 @@ export const PageTwo=()=>{
                       
                     </div>   
 
-                     {/* 19 ---------------------------------------------Campus Placement - IT Jobs--------------------------------------------------  1*/}
-             <p id="Campus Placement - IT Jobs" className="pcorse"> Campus Placement - IT Jobs</p>
-                    <div  className="crosetabss" >
-                       
-                        <div className="corsetab">
-                            <div><img className="corseimg" src="https://static.uacdn.net/topology/LEARNCP/icon/origin.png" alt="" />
-                            <h5 className="corsetitle">Campus Placement- IT Jobs</h5>
-                            </div>
-                            
-                        </div>
-                   
-                              
-                      
-                    </div>
 
-
-                 {/* 20 ---------------------------------------------Programming for Students-------------------------------------------------  1*/}
-             <p id=" Programming for Students" className="pcorse"> Programming for Students</p>
-                    <div  className="crosetabss" >
-                       
-                        <div className="corsetab">
-                            <div><img className="corseimg" src="https://static.uacdn.net/topology/test_default.png" alt="" />
-                            <h5 className="corsetitle">Programming for Students</h5>
-                            </div>
-                            
-                        </div>
-                   
-                              
-                      
-                    </div>
                        
              {/* 21 ---------------------------------------------CBSE--------------------------------------------------  9*/}
-            <p id="CBSE" className="pcorse"> CBSE</p>
+            <p id="24" className="pcorse"> CBSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -849,7 +852,7 @@ export const PageTwo=()=>{
                     </div>        
 
              {/* 21 ---------------------------------------------Maharashtra State Board--------------------------------------------------  9*/}
-             <p id="Maharashtra State Board" className="pcorse"> Maharashtra State Board</p>
+             <p id="25" className="pcorse"> Maharashtra State Board</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -883,7 +886,7 @@ export const PageTwo=()=>{
                     </div>  
 
              {/* 22 ---------------------------------------------ICSE--------------------------------------------------  9*/}
-             <p id="ICSE" className="pcorse"> ICSE</p>
+             <p id="26" className="pcorse"> ICSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -917,7 +920,7 @@ export const PageTwo=()=>{
                     </div>   
 
   {/* 23 ---------------------------------------------Tamil Nadu Board--------------------------------------------------  9*/}
-            <p id="Tamil Nadu Board" className="pcorse"> Tamil Nadu Board</p>
+            <p id="27" className="pcorse"> Tamil Nadu Board</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -951,7 +954,7 @@ export const PageTwo=()=>{
                     </div>   
 
      {/* 24 -----------------------------------------------JEE and NEET Preparation--------------------------------------------------  2*/}
-            <p  className="pcorse">JEE and NEET Preparation</p>
+            <p id="28" className="pcorse">JEE and NEET Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -970,7 +973,7 @@ export const PageTwo=()=>{
                     </div>
 
      {/* 25 ----------------------------------------------IITJEE/NEET Foundation & NTSE--------------------------------------------------  1*/}
-            <p  className="pcorse">IITJEE/NEET Foundation & NTSE</p>
+            <p id="29" className="pcorse">IITJEE/NEET Foundation & NTSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -984,7 +987,7 @@ export const PageTwo=()=>{
                     </div>  
 
   {/* 26 ---------------------------------------------USMLE--------------------------------------------------  9*/}
-            <p id="USMLE"   className="pcorse"> USMLE</p>
+            <p id="30"   className="pcorse"> USMLE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -1011,7 +1014,7 @@ export const PageTwo=()=>{
                       
                     </div> 
                {/* 27 ----------------------------------------------NCLEX®--------------------------------------------------  1*/}
-                <p id="NCLEX®" className="pcorse">NCLEX®</p>
+                <p id="31" className="pcorse">NCLEX®</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
