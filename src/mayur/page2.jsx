@@ -1,12 +1,132 @@
 
+import { useEffect, useRef, useState } from "react"
 import "../mayur/style/page2.css"
 import { Page2Top } from "./style/page2top"
+
+const getDimensions = ele => {
+    const { height } = ele.getBoundingClientRect();
+    const offsetTop = ele.offsetTop;
+    const offsetBottom = offsetTop + height;
+  
+    return {
+      height,
+      offsetTop,
+      offsetBottom,
+    };
+  };
+
+  const scrollTo = ele => {
+    ele.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
 
 
 export const PageTwo=()=>{
- 
+    
+    const [visibility,setVisibility]=useState()
 
+    const headRef=useRef(null)
+    const oneref=useRef(null)
+    const tworef=useRef(null)
+    const threeref=useRef(null)
+    const fourref=useRef(null)
+    const fiveref=useRef(null)
+    const sixref=useRef(null)
+    const sevenref=useRef(null)
+    const eightref=useRef(null)
+    const nineref=useRef(null)
+    const tenref=useRef(null)
+    const elevenref=useRef(null)
+    const tewelref=useRef(null)
+    const thirtenref=useRef(null)
+    const fourtenref=useRef(null)
+    const fiftenref=useRef(null)
+    const sixtenref=useRef(null)
+    const seventeenref=useRef(null)
+    const eightenref=useRef(null)
+    const nineteenref=useRef(null)
+    const tweentyref=useRef(null)
+    const twentyoneref=useRef(null)
+    const twentytworef=useRef(null)
+    const twentythreeref=useRef(null)
+    const twentyfourref=useRef(null)
+    const twentyfiveref=useRef(null)
+    const twentysixref=useRef(null)
+    const twentysevenref=useRef(null)
+    const twentyeightref=useRef(null)
+    const twentynineref=useRef(null)
+    const thirtyref=useRef(null)
+    const thirtoneref=useRef(null)
+
+
+    const sectioRef=[
+        {section:"1", ref:oneref},
+        {section:"2", ref:tworef},
+        {section:"3", ref:threeref},
+        {section:"4", ref:fourref},
+        {section:"5", ref:fiveref},
+        {section:"6", ref:sixref},
+        {section:"7", ref:sevenref},
+        {section:"8", ref:eightref},
+        {section:"9", ref:nineref},
+        {section:"10", ref:tenref},
+        {section:"11", ref:elevenref},
+        {section:"12", ref:tewelref},
+        {section:"13", ref:thirtenref},
+        {section:"14", ref:fourtenref},
+        {section:"15", ref:fiftenref},
+        {section:"16", ref:sixtenref},
+        {section:"17", ref:seventeenref},
+        {section:"18", ref:eightenref},
+        {section:"19", ref:nineteenref},
+        {section:"20", ref:tweentyref},
+        {section:"21", ref:twentyoneref},
+        {section:"22", ref:twentytworef},
+        {section:"23", ref:twentythreeref},
+        {section:"24", ref:twentyfourref},
+        {section:"25", ref:twentyfiveref},
+        {section:"26", ref:twentysixref},
+        {section:"27", ref:twentysevenref},
+        {section:"28", ref:twentyeightref},
+        {section:"29", ref:twentynineref},
+        {section:"30", ref:thirtyref},
+        {section:"31", ref:thirtoneref},
+        
+        // {section:"18", ref:eightenref},
+    ]
+
+
+
+    useEffect(()=>{
+        const handleScroll=()=>{
+            const { height: headerHeight } = getDimensions(headRef.current);
+            const scrollPosition=window.scrollX + headerHeight;
+           
+            const selected =sectioRef.find(({section,ref})=>{
+                const ele =ref.current;
+                if(ele){
+                    const { offsetBottom, offsetTop } = getDimensions(ele);
+                    return scrollPosition > offsetTop && scrollPosition < offsetBottom;
+                }
+                
+
+            })
+            if (selected && selected.section !== visibility) {
+                setVisibility(selected.section);
+              } else if (!selected && visibility) {
+                setVisibility(undefined);
+              }
+           
+        }
+        handleScroll()
+        window.addEventListener("scroll",handleScroll);
+        return ()=>{
+            window.removeEventListener("scroll",handleScroll)
+        }
+    } ,[visibility])
 
 
     return (
@@ -15,41 +135,153 @@ export const PageTwo=()=>{
             <div id="pagetwoCont">
 
             <div id="leftside">
-                <div id="page2list">
+                <div id="page2list" ref={headRef}>
                     <ul>
-                         <li className="leftbar" > <a href="#1"   >Full Stack Development</a></li>
-                         <li className="leftbar"> <a href="#2">Campus Placement - IT Jobs</a></li>
-                        <li className="leftbar"> <a href="#3">Programming for Students</a></li>
+                         
+                         <li  className="leftbar" className={`header_link ${visibility==="oneref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(oneref.current)
+                        }}  >Full Stack Development</li>
+                         
+                         <li className="leftbar" className={`header_link ${visibility==="tworef" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(tworef.current)
+                        }}  >Campus Placement - IT Jobs</li>
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="threeref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(threeref.current)
+                        }}  >Programming for Students</li>
 
-                         <li className="leftbar"> <a href="#4">UPSC CSE </a></li>
-                        <li className="leftbar"> <a href="#5">Govt Exams</a></li>
-                        <li className="leftbar"> <a href="#6">Defence Exams</a></li>
-                        <li className="leftbar"> <a href="#7">JEE and NEET Preparation</a></li>
-                        <li className="leftbar"> <a href="#8">State PSC</a></li>
-                        <li className="leftbar"> <a href="#9">NET Exams</a></li>
-                        <li className="leftbar"> <a href="#10">GATE, ESE and IIT-JAM</a></li> 
-                        <li className="leftbar"> <a href="#11">NEET PG</a></li>
-                        <li className="leftbar"> <a href="#12">Teaching Exams(TET) </a></li>
-                        <li className="leftbar"> <a href="#13">CAT & Other MBA Entrance Tests</a></li>
-                        <li className="leftbar"> <a href="#14">CA</a></li>
-                        <li className="leftbar"> <a href="#15">State CET</a></li>
-                        <li className="leftbar"> <a href="#16">CLAT & Other Law Entrance Exams</a></li>
-                        <li className="leftbar"> <a href="#17">Judiciary Exams</a></li>
-                        <li className="leftbar"> <a href="#18">CS</a></li>
-                        <li className="leftbar"> <a href="#19">Foreign Studies</a></li>
-                        <li className="leftbar"> <a href="#20">IPMAT/BBA and Hotel Management</a></li>
-                        <li className="leftbar"> <a href="#21">IITJEE/NEET Foundation & NTSE</a></li>
-                        <li className="leftbar"> <a href="#22">CMA</a></li>
-                        <li className="leftbar"> <a href="#23">CUCET</a></li>
-                        <li className="leftbar"> <a href="#24">CBSE</a></li>
-                        <li className="leftbar"> <a href="#25">Maharashtra State Board</a></li>
-                        <li className="leftbar"> <a href="#26">ICSE</a></li>
-                        <li className="leftbar"> <a href="#27">Tamil Nadu Board</a></li>
-                        <li className="leftbar"> <a href="#28">JEE and NEET Preparation</a></li>
-                        <li className="leftbar"> <a href="#29">IITJEE/NEET Foundation & NTSE</a></li>
+                         
+                         <li className="leftbar" className={`header_link ${visibility==="fourref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(fourref.current)
+                        }}  >UPSC CSE</li>
+
+
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="fiveref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(fiveref.current)
+                        }}  >Govt Exams</li>
+
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="sixref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(sixref.current)
+                        }}  >Defence Exams</li>
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="sevenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(sevenref.current)
+                        }}  >JEE and NEET Preparation</li>
+
+                        <li className="leftbar" className={`header_link ${visibility==="eightref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(eightref.current)
+                        }}  >State PSC</li>
+                      
+
+                        <li className="leftbar" className={`header_link ${visibility==="nineref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(nineref.current)
+                        }}  >NET Exams</li>
+                       
+
+                        <li className="leftbar" className={`header_link ${visibility==="tenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(tenref.current)
+                        }}  >GATE, ESE and IIT-JAM</li>
+                   
+
+                        <li className="leftbar" className={`header_link ${visibility==="elevenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(elevenref.current)
+                        }}  >NEET PG</li>
+                       
+
+                        <li className="leftbar" className={`header_link ${visibility==="tewelref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(tewelref.current)
+                        }}  >Teaching Exams(TET) </li>
+                       
+
+                        <li className="leftbar" className={`header_link ${visibility==="thirtenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(thirtenref.current)
+                        }}  >CAT & Other MBA Entrance Tests </li>
+                       
+
+                        <li className="leftbar" className={`header_link ${visibility==="thirtenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(thirtenref.current)
+                        }} >CA </li>
+                       
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="fourtenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(fourtenref.current)
+                        }} >State CET </li>
+                        
+
+                        <li className="leftbar" className={`header_link ${visibility==="fiftenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(fiftenref.current)
+                        }} >CLAT & Other Law Entrance Exams </li>
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="seventeenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(seventeenref.current)
+                        }}  >Judiciary Exams</li>
+
+                        <li className="leftbar" className={`header_link ${visibility==="eightenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(eightenref.current)
+                        }}  >CS</li>
+
+        
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="nineteenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(nineteenref.current)
+                        }}  >Foreign Studies</li>
+                 
+                        <li className="leftbar" className={`header_link ${visibility==="tweentyref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(tweentyref.current)
+                        }}  >IPMAT/BBA and Hotel Management</li>
+
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="twentyoneref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentyoneref.current)
+                        }}  >IITJEE/NEET Foundation & NTSE</li>
+
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="twentytworef" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentytworef.current)
+                        }}  >CMA</li>
+                        
+
+                        <li className="leftbar" className={`header_link ${visibility==="twentythreeref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentythreeref.current)
+                        }}  >CUCET</li>
+
+                      
+                        <li className="leftbar" className={`header_link ${visibility==="twentyfourref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentyfourref.current)
+                        }}  >CBSE</li>
+                       
+                        <li className="leftbar" className={`header_link ${visibility==="twentyfiveref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentyfiveref.current)
+                        }}  >Maharashtra State Board</li>
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="twentysixref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentysixref.current)
+                        }}  >ICSE</li>
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="twentysevenref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentysevenref.current)
+                        }}  >Tamil Nadu Board</li>
+                        
+
+                        <li className="leftbar" className={`header_link ${visibility==="twentyeightref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentyeightref.current)
+                        }}  >JEE and NEET Preparation</li>
+
+                        
+                        <li className="leftbar" className={`header_link ${visibility==="twentynineref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(twentynineref.current)
+                        }}  >IITJEE/NEET Foundation & NTSE</li>
                         {/* <li className="leftbar"> <a href="#30">INTERNATIONAL</a></li> */}
-                        <li className="leftbar"> <a href="#30">USMLE</a></li>
-                        <li className="leftbar"> <a href="#31">NCLEX®</a></li>
+                      
+                        <li className="leftbar" className={`header_link ${visibility==="thirtyref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(thirtyref.current)
+                        }}  >USMLE</li>
+                       
+                        <li className="leftbar" typeof="button" className={`header_link ${visibility==="thirtoneref" ? "selected" :"" }`} onClick={()=>{
+                            scrollTo(thirtoneref.current)
+                        }}  >NCLEX®</li>
                       
 
 
@@ -64,7 +296,7 @@ export const PageTwo=()=>{
             <div id="rightside">
 
                 {/* -----------------------------------------------Full Stack Development-------------------------------------------------- 1*/}
-            <p id="1" className="pcorse">Full Stack Development</p>
+            <p id="1" className="section" ref={oneref} className="pcorse">Full Stack Development</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -78,7 +310,7 @@ export const PageTwo=()=>{
                     </div>
 
                       {/* 19 ---------------------------------------------Campus Placement - IT Jobs--------------------------------------------------  1*/}
-                      <p id="2" className="pcorse"> Campus Placement - IT Jobs</p>
+                <p id="2" ref={tworef} className="pcorse"> Campus Placement - IT Jobs</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -94,7 +326,7 @@ export const PageTwo=()=>{
 
 
                  {/* 20 ---------------------------------------------Programming for Students-------------------------------------------------  1*/}
-             <p id="3" className="pcorse"> Programming for Students</p>
+             <p id="3" ref={threeref} className="pcorse"> Programming for Students</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -108,7 +340,7 @@ export const PageTwo=()=>{
                       
                     </div>                   
 {/* -----------------------------------------------UPSC CSE-------------------------------------------------- ----------------2*/}
-            <p id="4" className="pcorse">UPSC CSE</p>
+            <p id="4" ref={fourref} className="pcorse">UPSC CSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -127,7 +359,7 @@ export const PageTwo=()=>{
 
 
                     {/* -----------------------------------------------Govt Exams--------------------------------------------------  4*/}
-             <p id="5" className="pcorse">Govt Exams</p>
+             <p id="5" ref={fiveref} className="pcorse">Govt Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -157,7 +389,7 @@ export const PageTwo=()=>{
                     </div>
 
                             {/* -----------------------------------------------Defence Exams--------------------------------------------------  4*/}
-             <p id="6"  className="pcorse">Defence Exams</p>
+             <p id="6" ref={sixref} className="pcorse">Defence Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -188,7 +420,7 @@ export const PageTwo=()=>{
 
 
                                {/* 4 -----------------------------------------------JEE and NEET Preparation--------------------------------------------------  2*/}
-                <p id="7" className="pcorse">JEE and NEET Preparation</p>
+                <p id="7" ref={sevenref} className="pcorse">JEE and NEET Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -208,7 +440,7 @@ export const PageTwo=()=>{
 
 
                  {/* 5-----------------------------------------------State PSC--------------------------------------------------  32*/}
-             <p id="8" className="pcorse">State PSC</p>
+             <p id="8" ref={eightref} className="pcorse">State PSC</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -471,7 +703,7 @@ export const PageTwo=()=>{
                     </div>
 
                     {/* 6 -----------------------------------------------NET Exams--------------------------------------------------  2*/}
-            <p id="9" className="pcorse">NET Exams Preparation</p>
+            <p id="9" ref={nineref} className="pcorse">NET Exams Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -490,7 +722,7 @@ export const PageTwo=()=>{
                     </div>            
                     
                     {/* 7 -----------------------------------------------GATE, ESE and IIT-JAM--------------------------------------------------  3*/}
-            <p id="10" className="pcorse">GATE, ESE and IIT-JAM</p>
+            <p id="10" ref={tenref} className="pcorse">GATE, ESE and IIT-JAM</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -515,7 +747,7 @@ export const PageTwo=()=>{
                     </div>    
 
                     {/* 8 -----------------------------------------------NEET PG--------------------------------------------------  1*/}
-            <p id="11" className="pcorse">NEET PG</p>
+            <p id="11" ref={elevenref} className="pcorse">NEET PG</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -530,7 +762,7 @@ export const PageTwo=()=>{
 
 
                        {/* 8 -----------------------------------------------Teaching Exams (TET)--------------------------------------------------  2*/}
-            <p id="12" className="pcorse">Teaching Exams (TET)</p>
+            <p id="12" ref={tewelref} className="pcorse">Teaching Exams (TET)</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -548,7 +780,7 @@ export const PageTwo=()=>{
                       
                     </div>  
                      {/* 9 -----------------------------------------------CAT & Other MBA Entrance Tests--------------------------------------------------  3*/}
-             <p id="13" className="pcorse">CAT & Other MBA Entrance Tests</p>
+             <p id="13" ref={thirtenref} className="pcorse">CAT & Other MBA Entrance Tests</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -574,7 +806,7 @@ export const PageTwo=()=>{
 
 
                   {/* 10 -----------------------------------------------CA--------------------------------------------------  4*/}
-            <p id="14" className="pcorse">CA</p>
+            <p id="14" ref={fourtenref} className="pcorse">CA</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -606,7 +838,7 @@ export const PageTwo=()=>{
 
 
                      {/* 11 -----------------------------------------------State CET--------------------------------------------------  4*/}
-            <p id="15" className="pcorse">State CET</p>
+            <p id="15" ref={fiftenref} className="pcorse">State CET</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -634,7 +866,7 @@ export const PageTwo=()=>{
 
 
                  {/* 12 ----------------------------------------------CLAT & Other Law Entrance Exams--------------------------------------------------  1*/}
-            <p id="16" className="pcorse">CLAT & Other Law Entrance Exams</p>
+            <p id="16" ref={sixtenref} className="pcorse">CLAT & Other Law Entrance Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -650,7 +882,7 @@ export const PageTwo=()=>{
 
 
          {/* 13 ----------------------------------------------Judiciary Exams--------------------------------------------------  1*/}
-         <p id="17" className="pcorse">Judiciary Exams</p>
+         <p id="17" ref={seventeenref} className="pcorse">Judiciary Exams</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -667,7 +899,7 @@ export const PageTwo=()=>{
 
 
                      {/* 14 ----------------------------------------------CS--------------------------------------------------  1*/}
-         <p id="18" className="pcorse">CS</p>
+         <p id="18"   ref={eightenref} className="pcorse">CS</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -696,7 +928,7 @@ export const PageTwo=()=>{
                     </div>  
 
                          {/* 15 ----------------------------------------------Foreign Studies--------------------------------------------------  2*/}
-            <p id="19" className="pcorse">Foreign Studies</p>
+            <p id="19" ref={nineteenref} className="pcorse">Foreign Studies</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -718,7 +950,7 @@ export const PageTwo=()=>{
                     </div>    
 
                          {/* 16 ----------------------------------------------IPMAT/BBA and Hotel Management--------------------------------------------------  1*/}
-             <p id="20" className="pcorse">IPMAT/BBA and Hotel Management</p>
+             <p id="20" ref={tweentyref} className="pcorse">IPMAT/BBA and Hotel Management</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -733,7 +965,7 @@ export const PageTwo=()=>{
 
 
               {/* 17 ----------------------------------------------IITJEE/NEET Foundation & NTSE--------------------------------------------------  1*/}
-            <p id="21" className="pcorse">IITJEE/NEET Foundation & NTSE</p>
+            <p id="21" ref={twentyoneref} className="pcorse">IITJEE/NEET Foundation & NTSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -747,7 +979,7 @@ export const PageTwo=()=>{
                     </div>  
 
                       {/* 18 ---------------------------------------------CMA--------------------------------------------------  3*/}
-            <p id="22" className="pcorse"> CMA</p>
+            <p id="22" ref={twentytworef} className="pcorse"> CMA</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -773,7 +1005,7 @@ export const PageTwo=()=>{
                     </div>   
 
             {/* 18 ---------------------------------------------CUCET--------------------------------------------------  1*/}
-             <p id="23" className="pcorse"> CUCET</p>
+             <p id="23" ref={twentythreeref} className="pcorse"> CUCET</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -790,7 +1022,7 @@ export const PageTwo=()=>{
 
                        
              {/* 21 ---------------------------------------------CBSE--------------------------------------------------  9*/}
-            <p id="24" className="pcorse"> CBSE</p>
+            <p id="24" ref={ twentyfourref} className="pcorse"> CBSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -852,7 +1084,7 @@ export const PageTwo=()=>{
                     </div>        
 
              {/* 21 ---------------------------------------------Maharashtra State Board--------------------------------------------------  9*/}
-             <p id="25" className="pcorse"> Maharashtra State Board</p>
+             <p id="25" ref={twentyfiveref} className="pcorse"> Maharashtra State Board</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -886,7 +1118,7 @@ export const PageTwo=()=>{
                     </div>  
 
              {/* 22 ---------------------------------------------ICSE--------------------------------------------------  9*/}
-             <p id="26" className="pcorse"> ICSE</p>
+             <p id="26" ref={twentysixref} className="pcorse"> ICSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -920,7 +1152,7 @@ export const PageTwo=()=>{
                     </div>   
 
   {/* 23 ---------------------------------------------Tamil Nadu Board--------------------------------------------------  9*/}
-            <p id="27" className="pcorse"> Tamil Nadu Board</p>
+            <p id="27" ref={twentysevenref} className="pcorse"> Tamil Nadu Board</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -954,7 +1186,7 @@ export const PageTwo=()=>{
                     </div>   
 
      {/* 24 -----------------------------------------------JEE and NEET Preparation--------------------------------------------------  2*/}
-            <p id="28" className="pcorse">JEE and NEET Preparation</p>
+            <p id="28" ref={twentyeightref} className="pcorse">JEE and NEET Preparation</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -973,7 +1205,7 @@ export const PageTwo=()=>{
                     </div>
 
      {/* 25 ----------------------------------------------IITJEE/NEET Foundation & NTSE--------------------------------------------------  1*/}
-            <p id="29" className="pcorse">IITJEE/NEET Foundation & NTSE</p>
+            <p id="29" ref={twentynineref} className="pcorse">IITJEE/NEET Foundation & NTSE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -987,7 +1219,7 @@ export const PageTwo=()=>{
                     </div>  
 
   {/* 26 ---------------------------------------------USMLE--------------------------------------------------  9*/}
-            <p id="30"   className="pcorse"> USMLE</p>
+            <p id="30" ref={thirtyref}   className="pcorse"> USMLE</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">
@@ -1014,7 +1246,7 @@ export const PageTwo=()=>{
                       
                     </div> 
                {/* 27 ----------------------------------------------NCLEX®--------------------------------------------------  1*/}
-                <p id="31" className="pcorse">NCLEX®</p>
+                <p id="31" ref={thirtoneref} className="pcorse">NCLEX®</p>
                     <div  className="crosetabss" >
                        
                         <div className="corsetab">

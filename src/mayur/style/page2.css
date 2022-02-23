@@ -2,9 +2,12 @@
     width: 100%;
     height: auto;
     margin: auto;
+    font-family: BlinkMacSystemFont,sans-serif!important;
+
    
 }
 #page2top{
+    
     text-align: left;
     width: 80%;
     height: 180px;
@@ -65,7 +68,6 @@
     display: flex;
     flex-direction: row;
     /* gap: 15px; */
-    font-family: AvertaStd,-apple-system,BlinkMacSystemFont,sans-serif!important;
    background-color: hsl(0,0%,98%);
    margin: auto;
 }
@@ -86,27 +88,45 @@
    
 }
 .leftbar{
-    list-style: none;
-    line-height: 44px;
-    text-align: left;
-
-}
-a{
     text-decoration: none;
     color: #7a8b94;
     font-weight: normal;
-    font-size: 12px;
    
     margin: 0px;
-    
+
 }
-/* a:active:visited{
+li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: left;
+
+    color: #7a8b94;
+
+    cursor: pointer;
+   
+}
+.selected {
+    border-bottom: 3px solid #11bb9a;
+    /* color: #11bb9a; */
+    font-weight: bolder;
     color: red;
-    text-decoration: underline;
-} */
-/* a:checked{
-    color: red;
-} */
+    /* background-color: red; */
+    /* font-size: 20px; */
+  }
+  .header_link {
+    /* padding: 20px; */
+    /* color: #314d4a;
+    font-weight: normal;
+ 
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    outline:#3c4852; */
+    border: none;
+  }
+
+
+
 #page2list::-webkit-scrollbar{
    /* background: white; */
    width: 8px;
