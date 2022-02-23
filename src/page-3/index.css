@@ -1,46 +1,139 @@
-.box {
-  background-color: yellow;
+.first-box {
+  display: flex;
+  /* border: 2px solid teal; */
 }
-.girl-img {
+
+.first-box-item2 {
+  /* border: 2px solid red; */
+  flex-grow: 2;
+}
+.first-box-item1 img {
   width: 100%;
   height: 100%;
 }
-.boy-img {
+.first-box-item3 img {
   width: 100%;
   height: 100%;
 }
-.top-btn-div{
+.first-box-item2 div {
   text-align: center;
-  padding-top: 30px;
- 
 }
-.top-btn{
-    background-color: #003c8f;
+.first-box-item2-1-btn {
+  margin-left: auto;
+  margin-right: auto;
+  background: #003c8f;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5%;
 }
-.top-btn-text {
+.first-box-item2 div button p {
+  margin: 0px;
   color: white;
+  padding: 6px 6px 6px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150% !important;
 }
-.top-heading-text {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 150%;
-    z-index: 2;
+.first-box-item2 div h3 {
+  color: #3c4852;
+  margin: 0px;
+  font-weight: normal;
+  line-height: 150%;
 }
-.top-subheading-text {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 120%;
-    color: #7A8B94;
-    margin: 0px;
-    font-weight: normal;
-    line-height: 150%;
+.first-box-item2-2-btn {
+  position: relative;
+  border-color: #08bd80;
+  border: none;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  min-height: 48px;
+  color: white;
+  background-color: #08bd80;
+  margin-top: 5%;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
 }
-.css-1cd5uh1-StyledButton-SubButton {
-    position: relative;
-    border-color:#08bd80;
-    background-color: #08bd80;
-    color: white;
-    padding: 2%;
-    border-radius: 10px;
-    font-weight: bold;
+/* .......Second Div Box.... */
+.second-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  
+}
+.second-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.second-section > div h2 {
+  text-align: center;
+}
+.second-section-card {
+  display: flex;
+  margin-left: 96px;
+  margin-right: 96px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+.second-section-card-item1 {
+  width: 40%;
+}
+.second-section-card-item2 {
+  width: 40%;
+}
+.second-section-card-item3 {
+  width: 40%;
+}
+.second-section-card-item4 {
+  width: 40%;
+}
+.flex {
+  display: flex;
+}
+.second-section-card h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3c4852;
+  margin: 0px;
+}
+.second-section-card h5 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4852;
+  margin: 0px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+.second-section hr {
+  background-color: #e9eef2;
+  margin: 0 96px;
+}
+.pricing {
+  padding: 64px 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-item1 {
+  width: 600px;
+  text-align: left;
+}
+.pricing-item2 {
+  align-self: center;
+}
+.pricing-item2 h4 {
+  color: green;
 }
