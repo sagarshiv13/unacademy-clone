@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+}
+.div1{
+    
+}
+.div2{
+    width: 40%;
+}
+.Hedding{
+font-size: 40px;
+font-weight: bolder;
+color: #394752;
+margin-top: 100px;
+margin-bottom: 70px;
+}
+.StartLearningbtn{
+
+}
+.buttonStartL{
+    border: 0px;
+  background-color: white;
+  color: #394752;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+}
+.nvbr_user_nm{
+    background-color: #5CBE81;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 6px 22px;
+    margin-left: 25px;
+  }
+  .nvbr_user_nm:hover{
+    background-color: rgb(89, 89, 224);
+  }
+.PopulaGoal{
+width: 80%;
+display: flex;
+justify-content: space-between;
+}
+.popular{
+    color: #394752;
+}
+.AnchorTag{
+    color: #5CBE81;
+    font-weight: bold;
+    text-decoration: none;
+}
+.cardDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card{
+    width: 30%;
+}
+.cardimg img{
+    width: 100%;
+}
+.hedding3{
+    color:#485662;
+    font-size: 24px;
+    font-weight: bold;
+}
+.ParaCard{
+    font-size: 15px;
+
+}
+.flex2{
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+
+}
+.flix2part1{
+    width: 45%;
+
+}
+.flix2part2{
+    width: 45%;
+    
+}
+.flix2part2 img{
+    width: 100%;
+}
+.flix2part1Of1{
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    margin-top: 15%;
+}
+.heddingForApp{
+    font-size: 30px;
+    font-weight: bold;
+    color: #394752;
+}
+.paraForApp{
+    font-size: 14px;
+    color: #485662;
+}
+.AppBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.AppBoximg{
+    width: 48%;
+    margin: auto;
+}
+.AppBoximg img{
+    width: 100%;
+}
+.flix2Box2{
+    width: 48%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flix2Box2 img{
+    width: 100%;
+}
+.flex21{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    
+
+}
