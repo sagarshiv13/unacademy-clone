@@ -162,6 +162,7 @@ li{
      flex-direction: column;
      overflow-y: scroll;
      margin: auto;
+     /* padding-top: 19px; */
  }
 
  #rightside::-webkit-scrollbar{
