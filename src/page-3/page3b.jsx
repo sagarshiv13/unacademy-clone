@@ -1,5 +1,5 @@
 import "./index.css";
-export const Page3 = () => {
+export const Page3b = () => {
   return (
     <div className="container">
       {/* .....First Section.... */}
@@ -11,16 +11,16 @@ export const Page3 = () => {
           <div>
             <a href="/">
               <button className="first-box-item2-1-btn">
+              <img src="https://static.uacdn.net/production/_next/static/images/winter-logo.svg?q=75&w=48" alt="" /> 
                 <p>Experience our 2021 recap</p>
               </button>
             </a>
             <h1>
-              Learn Full Stack Development To Get Placed in Top Product
-              Companies{" "}
+              Crack Programming for Students with India's largest learning
+              platform
             </h1>
             <h3>
-              Get Access to Live and Interactive Classes by India’s Top
-              Developers
+            Get Plus subscription and access unlimited live and recorded courses from India's best educators
             </h3>
             <a href="/">
               <button className="first-box-item2-2-btn">

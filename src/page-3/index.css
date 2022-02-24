@@ -23,9 +23,6 @@
   margin-right: auto;
   background: #003c8f;
   display: flex;
-  align-items: center;
-  padding-left: 12px;
-  padding-right: 12px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -34,10 +31,10 @@
 .first-box-item2 div button p {
   margin: 0px;
   color: white;
-  padding: 6px 6px 6px 12px;
+  padding: 6px 6px 6px 0px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 150% !important;
+  vertical-align: middle;
 }
 .first-box-item2 div h3 {
   color: #3c4852;
@@ -143,6 +140,8 @@
   max-width: 50%;
 }
 .third-section-first-box-item1 h1 {
+  position: sticky;
+  top: 0;
   font-weight: bold;
   font-size: 48px;
   line-height: 150%;
@@ -211,12 +210,10 @@
 .fifth-section > div {
   border-left: 72px solid transparent;
   border-right: 72px solid transparent;
-  
 }
 .fifth-section-first-box {
   display: flex;
   justify-content: space-between;
-  
 }
 .block4 {
   height: 403px;
@@ -225,7 +222,6 @@
   display: grid;
   grid-template-columns: 50% 50%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  
 }
 
 .block411 {
