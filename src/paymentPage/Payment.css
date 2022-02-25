@@ -109,9 +109,9 @@ input {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  outline: none;
+  outline: transparent;
   height: 40px;
-  border-radius: 5px;
+ 
 }
 .coupon-box-item3 {
   flex-grow: 2;
