@@ -1,0 +1,370 @@
+.btn {
+    border: 1px solid#5CBE81;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 46%;
+    margin-bottom: 100px;
+    height: 31px;
+    background: #FFFFFF;
+    color: #5CBE81;
+    padding: 8px 16px;
+    font-weight: 900;
+    font-size: 12px;
+    border: 0px;
+    box-shadow: inset 0px -1px 0px #5CBE81, inset -1px 0px 0px #5CBE81, inset 0px 1px 1px #5CBE81, inset 1px 0px 0px #5CBE81;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: #8de6af;
+
+}
+
+.main {
+    position: absolute;
+    width: 80%;
+    height: 263px;
+    
+}
+
+
+.first>div {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+}
+
+.social>img {
+    cursor: pointer;
+
+
+}
+
+.first>p {
+    position: absolute;
+    /* width: 258px; */
+    height: 20px;
+    /* left: 105px; */
+    bottom: 64px;
+
+    /* H6 */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+/* *************************************** */
+
+.second {
+
+    position: absolute;
+    left: 280px;
+    top: -0px
+}
+
+.second>p {
+    position: static;
+    /* width: 58px; */
+    height: 20px;
+    left: 0px;
+    top: 37px;
+
+    /* H6 */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+.second>:nth-child(1) {
+    position: static;
+    width: 80px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+    /* H5/BOLD */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+.third {
+
+    position: absolute;
+    left: 420px;
+    top: -0px
+}
+
+.third>p {
+    position: static;
+    /* width: 58px; */
+    height: 20px;
+    left: 0px;
+    top: 37px;
+
+    /* H6 */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+.third>:nth-child(1) {
+    position: static;
+    /* width: 80px; */
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+    /* H5/BOLD */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+.fourth {
+
+    position: absolute;
+    left: 570px;
+    top: -0px
+}
+
+.fourth>p {
+    position: static;
+    /* width: 58px; */
+    height: 20px;
+    left: 0px;
+    top: 37px;
+
+    /* H6 */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+.fourth>:nth-child(1) {
+    position: static;
+    /* width: 80px; */
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+    /* H5/BOLD */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+}
+
+/* ****************************** */
+
+.fifth {
+    position: absolute;
+    left: 720px;
+    top: -0px
+}
+
+.fifth> :nth-child(1) {
+    position: static;
+    /* width: 104px; */
+    height: 25px;
+    left: 0px;
+    top: 0px;
+
+    /* H5/BOLD */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+
+}
+
+.store1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.store1> :nth-child(1) {
+    position: absolute;
+    cursor: pointer;
+
+    width: 121px;
+    height: 37px;
+    /* margin-left: 20px; */
+    /* left: 0px; */
+    /* top: 44px; */
+}
+
+
+.store1 button {
+    border: 0px;
+    background-color: white;
+}
+
+.store1> :nth-child(2) {
+    position: absolute;
+    cursor: pointer;
+
+    /* width: 121px; */
+    height: 37px;
+    left: 130px
+}
+
+.edu {
+    /* position: static; */
+    /* width: 104px; */
+    height: 25px;
+    left: 40px;
+    /* top: 80px; */
+    margin-top: 80px;
+    /* color: red; */
+
+    /* H5/BOLD */
+
+    /* font-family: Urbanist; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    /* PRIMARY/Polish dark */
+
+    color: #394752;
+
+}
+
+.store2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.store2> :nth-child(1) {
+    position: absolute;
+    cursor: pointer;
+
+    width: 121px;
+    height: 37px;
+    /* margin-left: 20px; */
+    /* left: 0px; */
+    top: 164px;
+}
+
+.store2> :nth-child(2) {
+    position: absolute;
+    cursor: pointer;
+
+    width: 121px;
+    height: 37px;
+    left: 130px;
+    top: 164px;
+
+
+}
