@@ -7,8 +7,8 @@
 ## Deployment
 
 To deploy this project run
-`npm run start`
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# `npm run start`
+
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
