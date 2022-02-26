@@ -1,8 +1,14 @@
+#container {
+  width: 100%;
+  border: 2px solid teal;
+}
 .first-box {
   display: flex;
   /* border: 2px solid teal; */
 }
-
+.second-section h2 {
+  margin: 30px;
+}
 .first-box-item2 {
   /* border: 2px solid red; */
   flex-grow: 2;
