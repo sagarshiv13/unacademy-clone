@@ -1,15 +1,15 @@
 .container{
-     margin-left: 10%;
-     width:50%;
-     font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif;
-     font-size : 20px;
-     font-weight: 700px;
-     color: rgb(60, 72, 82)
+  width:50%;
+  font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size : 20px;
+  font-weight: 700px;
+  color: rgb(60, 72, 82);
+  margin : auto
    }
    .main{
      display: block;
-     margin-left: 30px;
-     width: 100%;
+     /* margin-left: 20px; */
+     width: 50%;
    }
    h2{
      margin-bottom: -20px;
@@ -19,34 +19,38 @@
      margin-top: 5px;
      font-size: 14px;
    }
-   input{
-     padding-left: 8%;
-     width:40%;
-     height:35px;
-     border-radius: 5px;
-     border:0.1px solid grey;
-     margin: 20px;
-
-   }
+  
    .btn{
      background-color:rgb(10,190,129) ;
      padding:1%;
      width:150px;
      height:44px;
-     margin-top:-5px
+     margin-top:13px
    }
    .footer{
-     margin-left: 10%;
+     
      margin-top:20%
    }
    .cros{
      font-size: 31px;
-     margin-left: 30px;
+     
    }
    .cros:hover{
      cursor: pointer
    }
    .form{
-     margin-top:30px
+   
+     margin-top:30px;
+     margin-left: 28px;
+    
    }
-  
+   
+  .cont1{
+    width:50%;
+    margin-left:190px;
+}
+.inp{
+  width:400px;
+  margin-bottom: 20px;
+  padding-left: 10%;
+}
