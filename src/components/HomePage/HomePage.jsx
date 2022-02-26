@@ -9,7 +9,7 @@ export const Hompage = () => {
     <>
       <Navbar></Navbar>
       <div className={Hstyle.container}>
-        <div>
+        <div className={Hstyle.HomePageOut}>
           <div className={Hstyle.div1}>
             <div className={Hstyle.div2}>
               <p className={Hstyle.Hedding}>

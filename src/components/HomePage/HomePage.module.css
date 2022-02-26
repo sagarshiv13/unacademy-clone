@@ -4,8 +4,11 @@
 }
 
 .div2{
-    width: 40%;
+    width: 50%;
+    padding-bottom: 5%;
+    background-color: white;
 }
+
 .Hedding{
 font-size: 40px;
 font-weight: bolder;
@@ -13,8 +16,15 @@ color: #394752;
 margin-top: 100px;
 margin-bottom: 70px;
 }
-.StartLearningbtn{
 
+.HomePageOut{
+    background-image: url("https://static.uacdn.net/production/_next/static/images/home/hero_banner_mweb_new.svg?q=75&w=640");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
 }
 .buttonStartL{
     border: 0px;
