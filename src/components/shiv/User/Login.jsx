@@ -56,6 +56,17 @@ export const LogIn = () => {
   };
 
   return (
+    <div><header className="payment-header">
+    <div className="cont1">
+      <a href="/">
+        <img
+          src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=384"
+          alt=""
+        />
+      </a>
+    </div>
+  </header>
+
     <div className="container">
       <h1 className="cros" onClick={goBack}>
         X
@@ -69,14 +80,14 @@ export const LogIn = () => {
         </h5>
       </div>
       <form onSubmit={handleSubmit}>
-        <input
+        <input className="inp"
           name="email"
           onChange={handleChange}
           type="text"
           placeholder="Enter your email"
         />
 
-        <input
+        <input className="inp"
           name="password"
           onChange={handleChange}
           type="text"
@@ -88,6 +99,7 @@ export const LogIn = () => {
       <div className="footer">
         Having trouble Please contact help@unacademy.com for further support.
       </div>
+    </div>
     </div>
   );
 };
