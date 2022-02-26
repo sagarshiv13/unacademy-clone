@@ -1,6 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-// import "./App.css";
-
 import { Hompage } from "./components/HomePage/HomePage";
 import { PageTwo } from "./components/mayur/page2";
 import { ProductDetails } from "./components/mayur/productpage/productdetails";

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "./index.css";
+import "./indexPage3.css";
 export const Page3b = () => {
   return (
-    <div className="container">
+    <div id="container">
       {/* .....First Section.... */}
       <div className="first-box">
         <div className="first-box-item1">

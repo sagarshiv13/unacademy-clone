@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Login.css";
+import "./signup.css";
 export const SignUp = () => {
   const initState = {
     firstName: "",
@@ -40,55 +40,77 @@ export const SignUp = () => {
     });
   };
   return (
-    <div className="container">
-      <div className="main">
-        <h2 className="link">Join Unacademy</h2>
-        <h2>
+    <div><header className="payment-header">
+    <div className="cont">
+      <a href="/">
+        <img
+          src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=384"
+          alt=""
+        />
+      </a>
+    </div>
+  </header>
+    <div className="container1">
+      <div className="main1">
+        <h2 className="link1">Join Unacademy</h2>
+        <h2 className="link1">
           {" "}
-          <Link className="green" to="/logIn">
+          <Link className="red" to="/logIn">
             or login to your account
           </Link>
         </h2>
       </div>
       <br />
-      <form className="form" onSubmit={handleSubmit}>
-        <input
+      <form className="form1" onSubmit={handleSubmit}>
+        <input className="inp2"
           name="firstName"
           onChange={handleChange}
           type="text"
           placeholder="FirstName"
         />
-        <input
+        <br />
+        
+        <input className="inp2"
           name="lastName"
           type="text"
           onChange={handleChange}
           placeholder="LastName"
         />
-        <input
+        <br />
+      
+        <input className="inp2"
           name="email"
           type="text"
           onChange={handleChange}
           placeholder="Email"
         />
-        <input
+        <br />
+        
+        <input className="inp2"
           name="password"
           type="text"
           onChange={handleChange}
           placeholder="Password"
         />
-        <input
+        <br />
+        
+        <input className="inp2"
           name="mobile"
           type="text"
           onChange={handleChange}
           placeholder="Mobile No"
         />
-        <input
+        <br />
+       
+        <input className="inp2"
           name="gender"
           type="text"
           onChange={handleChange}
           placeholder="Gender"
         />
-        <input
+        <br />
+        
+        <input className="inp2"
           name="dob"
           type="text"
           onChange={handleChange}
@@ -97,6 +119,7 @@ export const SignUp = () => {
         <br />
         <input className="btn" type="submit" value="Sign Up" />
       </form>
+    </div>
     </div>
   );
 };
