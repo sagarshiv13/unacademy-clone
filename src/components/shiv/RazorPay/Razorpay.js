@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import useRazorpay from "react-razorpay";
-
+import { useNavigate } from "react-router-dom";
 export const Pay = () => {
   const Razorpay = useRazorpay();
 

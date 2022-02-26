@@ -18,6 +18,7 @@ function App() {
         <Route path="/programming" element={<Page3b />}></Route>
         <Route path="/campus" element={<Page3c />}></Route>
         <Route path="/plans" element={<Payment/>}></Route>
+        <Route path="/products" element={}></Route>
       </Routes>
     </div>
   );
