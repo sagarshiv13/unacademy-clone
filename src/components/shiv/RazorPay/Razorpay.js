@@ -3,7 +3,7 @@ import useRazorpay from "react-razorpay";
 import { useNavigate } from "react-router-dom";
 export const Pay = () => {
   const Razorpay = useRazorpay();
-
+  const navigate=useNavigate();
   const handlePayment = useCallback(() => {
     const options = {
       key: "rzp_test_md3nNLGyahlzW1",
@@ -16,6 +16,7 @@ export const Pay = () => {
 
       handler: (res) => {
         alert("Payment Succeeded");
+        
       },
 
       notes: {

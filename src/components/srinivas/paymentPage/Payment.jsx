@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import "./Payment.css";
 import { useCallback } from "react";
 import useRazorpay from "react-razorpay";
+import { useNavigate } from "react-router";
 export const Payment = () => {
   const [price, setPrice] = useState(80000);
   const [wrong, setWrong] = useState(false);
@@ -9,7 +10,7 @@ export const Payment = () => {
   const coupon = useRef("");
 
   const Razorpay = useRazorpay();
-
+  const navigate=useNavigate();
 
 
   const handlePrice=()=> {
@@ -39,6 +40,7 @@ export const Payment = () => {
 
       handler: (res) => {
         alert("Payment Succeeded");
+        navigate("/products")
       },
 
       notes: {
