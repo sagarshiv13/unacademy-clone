@@ -1,9 +1,11 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../../ContextApi/UserContextApi";
 import "./Login.css";
 export const LogIn = () => {
   const navigate = useNavigate();
+  const{statusHandler}=useContext(UserContext);
   const [user, setUser] = useState([]);
   const [text, setText] = useState({
     email: "",
@@ -36,12 +38,15 @@ export const LogIn = () => {
     user.map((e) => {
       if (e.email === text.email && e.password === text.password) {
         alert("success");
+        statusHandler(true)
         found = true;
+        navigate("/")
       }
     });
 
     if (!found) {
       alert("failed");
+      
     }
   };
 

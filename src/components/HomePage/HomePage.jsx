@@ -3,6 +3,7 @@ import { Navbar } from "../NavBar/navbar";
 import { Footer } from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { Page3a } from "../srinivas/page-3/page3a";
+
 export const Hompage = () => {
   return (
     <>
