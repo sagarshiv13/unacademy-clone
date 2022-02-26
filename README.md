@@ -8,20 +8,17 @@
 
 To deploy this project run
 ###  `npm run start`
-link : https://unacademy-clone.netlify.app/
+
+link : <a href ="https://unacademy-clone.netlify.app/"></a>
 
 ## Features
 
-<li>
-Login and Sign up
-Payment Using Razorpay
-coupon code
-Apply coupon code to get discount
-User friendly UI
-</li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li> Login and Sign up </li>
+<li>Payment Using Razorpay</li>
+<li>coupon code</li>
+<li>Apply coupon code to get discount</li>
+<li>User friendly UI</li>
 
 ### `npm run build`
 
