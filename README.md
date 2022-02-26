@@ -2,11 +2,12 @@
 
 ## About this Project
 
-####Build an online store using HTML, CSS and Js. For Backend we used nodeJs MongoDb and express.Integrated Razorpay API for Payment and also added promocode,add to cart,sorting Functionality.This is a team project, built by us in the Construct Week - Unit 4 at Masai School
+#Build an online website using React, CSS and Js. For Backend we used nodeJs MongoDb and express.Integrated Razorpay API for Payment and also added promocode.This is a team project, built by us in the Construct Week - Unit 5 at Masai School
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.\
+To deploy this project run
+`npm run start`
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
