@@ -1,11 +1,60 @@
 import { useRef, useState } from "react";
 import "./Payment.css";
-
+import { useCallback } from "react";
+import useRazorpay from "react-razorpay";
 export const Payment = () => {
   const [price, setPrice] = useState(80000);
   const [wrong, setWrong] = useState(false);
   const [couponApplied, setCouponApplied] = useState(false);
   const coupon = useRef("");
+
+  const Razorpay = useRazorpay();
+
+
+
+  const handlePrice=()=> {
+    if (
+      coupon.current.value === "sri10" &&
+      couponApplied === false
+    ) {
+      setPrice(price - (price * 10) / 100);
+      setCouponApplied(!couponApplied);
+      setWrong(false);
+
+    } else {
+      if (couponApplied === false) {
+        setWrong(true);
+      }
+    }
+  }
+  const handlePayment = useCallback((value) => {
+    const options = {
+      key: "rzp_test_md3nNLGyahlzW1",
+      amount: value*100,
+      currency: "INR",
+      name: "Unacademy",
+      description: "Pay & Checkout this Course, Upgrade your Coding Skill",
+      image:
+        "https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=384",
+
+      handler: (res) => {
+        alert("Payment Succeeded");
+      },
+
+      notes: {
+        address: "Razorpay Corporate Office",
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+
+    const rzpay = new Razorpay(options);
+    rzpay.open();
+  }, [Razorpay]);
+
+
+
   return (
     <div>
       <header className="payment-header">
@@ -27,7 +76,7 @@ export const Payment = () => {
             />
             <br />
             <p>
-             <span className="bold"> Live test and quizzes</span> <br />
+              <span className="bold"> Live test and quizzes</span> <br />
               Take live Mock Tests curated in line with the exam pattern and
               stay on track with your preparation
             </p>
@@ -79,20 +128,7 @@ export const Payment = () => {
               <input ref={coupon} type="text" placeholder="Enter sri10" />
               <button
                 id="button-apply"
-                onClick={() => {
-                  if (
-                    coupon.current.value === "sri10" &&
-                    couponApplied === false
-                  ) {
-                    setPrice(price - (price * 10) / 100);
-                    setCouponApplied(!couponApplied);
-                    setWrong(false)
-                  } else {
-                    if (couponApplied === false) {
-                      setWrong(true);
-                    }
-                  }
-                }}
+                onClick={handlePrice}
               >
                 Apply
               </button>
@@ -115,10 +151,12 @@ export const Payment = () => {
               {wrong ? <div>Enter correct coupon😁</div> : ""}
             </div>
             <div className="coupon-box-item3">
-              <a href="/">
-                {" "}
-                <button className="button-pay">Proceed to pay</button>
-              </a>
+              {" "}
+              <button onClick={()=>{
+                handlePayment(price);
+              }} className="button-pay" >
+                Proceed to pay
+              </button>
             </div>
           </div>
         </div>
@@ -126,3 +164,4 @@ export const Payment = () => {
     </div>
   );
 };
+
