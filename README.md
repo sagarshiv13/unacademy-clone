@@ -1,8 +1,8 @@
 #  Unacademy -Clone
 
-## Unacademy -Clone
+## About this Project
 
-In the project directory, you can run:
+####Build an online store using HTML, CSS and Js. For Backend we used nodeJs MongoDb and express.Integrated Razorpay API for Payment and also added promocode,add to cart,sorting Functionality.This is a team project, built by us in the Construct Week - Unit 4 at Masai School
 
 ### `npm start`
 
