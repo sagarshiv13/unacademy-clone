@@ -1,0 +1,53 @@
+.cont{
+    width:50%;
+    margin-left:190px;
+}
+.container1{
+  
+    width:50%;
+    font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size : 20px;
+    font-weight: 700px;
+    color: rgb(60, 72, 82);
+    margin : auto
+  }
+  .main1{
+    display: block;
+   
+    width: 50%;
+  }
+  .link1{
+    margin-bottom: -35px;
+  }
+  
+  .red{
+    color:rgb(10,190,129);
+    margin-top: 5px;
+    font-size: 14px;
+  }
+ 
+  .btn{
+    background-color:rgb(10,190,129) ;
+    padding:1%;
+    width:150px;
+    height:44px;
+    margin-top:13px
+  }
+  .inp2{
+      padding-left: 10%;
+      margin-bottom: 10px;
+  }
+  
+  
+  .form1{
+   margin-top:35px;
+   width:400px
+    
+    /* margin-left: 28px; */
+  }
+  input{
+      
+      border-radius: 5px;
+      border:0.5px solid grey;
+      
+  }
