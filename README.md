@@ -25,7 +25,7 @@ Front-end : React, CSS, Javascript,Material Ui
 Server: Node, Express, MongoDb, Rest Api
 
 ## Authors
-<li>@Sagar Shivshankar</li>
+<li><a href="https://github.com/sagarshiv13" >@Sagar Shivshankar</a></li>
 <li>@Anand Gupta</li>
 <li>@Srinivas Jakhar</li>
 <li>@Sarfaraz</li>
