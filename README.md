@@ -24,7 +24,6 @@ link : https://unacademy-clone.netlify.app/
 Front-end : React, CSS, Javascript,Material Ui
 <br>
 <br>
-<br>
 Server: Node, Express, MongoDb, Rest Api
 
 ## Authors
