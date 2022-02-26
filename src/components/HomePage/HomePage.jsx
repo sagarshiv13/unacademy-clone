@@ -2,6 +2,7 @@ import Hstyle from "./HomePage.module.css";
 import { Navbar } from "../NavBar/navbar";
 import { Footer } from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import { Page3a } from "../srinivas/page-3/page3a";
 export const Hompage = () => {
   return (
     <>
@@ -32,9 +33,9 @@ export const Hompage = () => {
             </a>
           </p>
           <p>
-            <a href="#" className={Hstyle.AnchorTag}>
+            <Link to="/fullStack" className={Hstyle.AnchorTag}>
               FULL STACK DEVELOPER
-            </a>
+            </Link >
           </p>
           <p>
             <a href="#" className={Hstyle.AnchorTag}>

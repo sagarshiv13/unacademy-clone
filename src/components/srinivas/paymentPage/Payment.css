@@ -1,0 +1,138 @@
+.payment-header {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+.content-box {
+  display: flex;
+  justify-content: space-between;
+}
+.content-left-box {
+  width: 45%;
+}
+.content-left-box p {
+  text-align: center;
+  padding: 0px 5% 0px 5%;
+}
+.content-right-box {
+  width: 50%;
+}
+.img-box {
+  padding: 12% 1px 1px 1px;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+.content-right-box h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3c4852;
+  text-align: center;
+}
+.content-right-box-item1 {
+  display: flex;
+  background-color: rgba(255, 173, 59, 0.08);
+  padding: 0px 7% 0px 10%;
+  color: #3c4852;
+  border-radius: 15px;
+}
+.content-right-box-item1 img {
+  padding: 10px;
+}
+.choose {
+  text-align: center;
+}
+.plan-box {
+  display: flex;
+  border: 1.5px solid green;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.plan-box-item1 {
+  flex-grow: 1;
+}
+.plan-box-item1 img {
+  width: 25px;
+  height: 25px;
+}
+.plan-box-item2 {
+  flex-grow: 5;
+}
+.plan-box-item3 {
+  flex-grow: 8;
+  text-align: end;
+  padding-right: 5%;
+}
+h4 {
+  text-align: center;
+}
+.coupon-box {
+  position: fixed;
+  height: 80px;
+  bottom: 10px;
+  transition: all 400ms ease-in-out 0s;
+  z-index: 1;
+  padding: 16px 32px 40px 24px;
+  border-radius: 8px 8px 0px 0px;
+  width: 580px;
+  right: auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.coupon-box-item1 {
+  flex-grow: 1;
+}
+.coupon-box-item2 {
+  flex-grow: 2.5;
+  width: 300px;
+  position: relative;
+}
+#button-apply {
+  position: absolute;
+  border-radius: 5px;
+  right: 10px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: green;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: small;
+}
+input {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: transparent;
+  height: 40px;
+ 
+}
+.coupon-box-item3 {
+  flex-grow: 2;
+  text-align: end;
+}
+.button-pay {
+  background-color: green;
+  padding: 15px 30px 15px 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+.rm-btn{
+  text-align: end;
+}
+.rm-btn button{
+  color: red;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}

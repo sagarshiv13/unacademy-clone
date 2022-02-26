@@ -1,0 +1,255 @@
+.first-box {
+  display: flex;
+  /* border: 2px solid teal; */
+}
+
+.first-box-item2 {
+  /* border: 2px solid red; */
+  flex-grow: 2;
+}
+.first-box-item1 img {
+  width: 100%;
+  height: 100%;
+}
+.first-box-item3 img {
+  width: 100%;
+  height: 100%;
+}
+.first-box-item2 div {
+  text-align: center;
+}
+.first-box-item2-1-btn {
+  margin-left: auto;
+  margin-right: auto;
+  background: #003c8f;
+  display: flex;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+.first-box-item2 div button p {
+  margin: 0px;
+  color: white;
+  padding: 6px 6px 6px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.first-box-item2 div h3 {
+  color: #3c4852;
+  margin: 0px;
+  font-weight: normal;
+  line-height: 150%;
+}
+.first-box-item2-2-btn {
+  position: relative;
+  border-color: #08bd80;
+  border: none;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  min-height: 48px;
+  color: white;
+  background-color: #08bd80;
+  margin-top: 5%;
+  width: 217px;
+  height: 60px;
+  font-size: 20px;
+}
+/* .......Second Div Box.... */
+.second-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+.second-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.second-section > div h2 {
+  text-align: center;
+}
+.second-section-card {
+  display: flex;
+  margin-left: 96px;
+  margin-right: 96px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+.second-section-card-item1 {
+  width: 40%;
+}
+.second-section-card-item2 {
+  width: 40%;
+}
+.second-section-card-item3 {
+  width: 40%;
+}
+.second-section-card-item4 {
+  width: 40%;
+}
+.flex {
+  display: flex;
+}
+.second-section-card h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3c4852;
+  margin: 0px;
+}
+.second-section-card h5 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #3c4852;
+  margin: 0px;
+  font-weight: normal;
+  margin-top: 16px;
+}
+.second-section hr {
+  background-color: #e9eef2;
+  margin: 0 96px;
+}
+.pricing {
+  padding: 64px 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-item1 {
+  width: 600px;
+  text-align: left;
+}
+.pricing-item2 {
+  align-self: center;
+}
+.pricing-item2 h4 {
+  color: green;
+}
+/* ...Third section */
+.third-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.third-section-first-box-item1 {
+  flex-grow: 1;
+  max-width: 50%;
+}
+.third-section-first-box-item1 h1 {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  color: #3c4852;
+  margin: 0px;
+  line-height: 120%;
+  font-size: 40px;
+  text-align: center;
+}
+.third-section-first-box-item2 {
+  flex-grow: 1;
+}
+.third-section-first-box-item2 h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0px;
+  font-size: 32px;
+  margin-top: 40px;
+}
+.fourth-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+.fourth-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.fourth-section h1 {
+  font-weight: bold;
+  line-height: 120%;
+  margin: 0px;
+  font-size: 40px;
+  text-align: center;
+}
+.course-fee {
+  font-size: large;
+  font-weight: bold;
+  padding: 5%;
+  text-align: center;
+}
+.course-fee p {
+  width: 15%;
+  line-height: 200%;
+  margin: auto;
+  padding: 8% 3% 8% 3%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.course-fee p button {
+  padding: 10px;
+  color: green;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.fourth-section h4 {
+  text-align: center;
+}
+
+.fifth-section {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+}
+.fifth-section > div {
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+}
+.fifth-section-first-box {
+  display: flex;
+  justify-content: space-between;
+}
+.block4 {
+  height: 403px;
+  width: 80vw;
+  margin-top: 112px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.block411 {
+  color: #3c4852;
+  font-size: 40px;
+  margin-left: 24px;
+  margin-top: 97px;
+  font-weight: bold;
+}
+.block412 {
+  color: #3c4852;
+  font-size: 18px;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+.block413 {
+  margin-top: 32px;
+  margin-left: 24px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-column-gap: 6%;
+}
+.block413 img {
+  width: 100%;
+  height: 40px;
+}
+.block42 img {
+  width: 100%;
+  height: 399px;
+}
