@@ -64,13 +64,14 @@ export const LogIn = () => {
           alt=""
         />
       </a>
+      <h1 className="cros" onClick={goBack}>
+        X
+      </h1>
     </div>
   </header>
 
     <div className="container">
-      <h1 className="cros" onClick={goBack}>
-        X
-      </h1>
+     
       <div className="main">
         <h2>Log in </h2>
         <h5>
