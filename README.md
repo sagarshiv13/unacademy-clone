@@ -21,16 +21,20 @@ link : https://unacademy-clone.netlify.app/
 ## Screenshots
 <img src="https://camo.githubusercontent.com/fa1ce586f2d122a6101498707c7c7787e757d9ba59af04304ed099407adb8ea5/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f302a6e394b334532416f533143384b4e3874"></img>
 ## Tech Stack 
-<h1>Front-end</h1> : React, CSS, Javascript,Material Ui
-
-
+Front-end : React, CSS, Javascript,Material Ui
 Server: Node, Express, MongoDb, Rest Api
 
-## Learn More
+## Authors
+<li>@Sagar Shivshankar</li>
+<li>@Anand Gupta</li>
+<li>@Srinivas Jakhar</li>
+<li>@Sarfaraz</li>
+<li>@Mayur Chandrakant Jadhav</li>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
 
 ### Code Splitting
 
