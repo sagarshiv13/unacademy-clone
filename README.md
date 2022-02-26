@@ -22,6 +22,7 @@ link : https://unacademy-clone.netlify.app/
 <img src="https://camo.githubusercontent.com/fa1ce586f2d122a6101498707c7c7787e757d9ba59af04304ed099407adb8ea5/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f302a6e394b334532416f533143384b4e3874"></img>
 ## Tech Stack 
 Front-end : React, CSS, Javascript,Material Ui
+<br>
 Server: Node, Express, MongoDb, Rest Api
 
 ## Authors
