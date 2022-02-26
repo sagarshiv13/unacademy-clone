@@ -7,7 +7,7 @@
 ## Deployment
 
 To deploy this project run
-<div>`npm run start`</div>
+<div style = "width:400px">npm run start</div>
 
 link : https://unacademy-clone.netlify.app/
 
