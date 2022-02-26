@@ -1,9 +1,8 @@
 .container{
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
-.div1{
-    
-}
+
 .div2{
     width: 40%;
 }

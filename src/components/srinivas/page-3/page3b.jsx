@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 export const Page3b = () => {
   return (
@@ -22,11 +23,11 @@ export const Page3b = () => {
             <h3>
             Get Plus subscription and access unlimited live and recorded courses from India's best educators
             </h3>
-            <a href="/">
+            <Link to="/plans">
               <button className="first-box-item2-2-btn">
                 Get subscription
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="first-box-item3">
@@ -105,7 +106,7 @@ export const Page3b = () => {
           <div className="pricing">
             <div className="pricing-item1">
               <h3>
-                Full Stack Development subscription starts <br />
+              Programming for Students subscription starts<br />
                 from <span>₹6,667/month</span>
               </h3>
             </div>

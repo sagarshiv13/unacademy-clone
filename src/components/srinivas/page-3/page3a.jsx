@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 export const Page3a = () => {
   return (
@@ -23,11 +24,11 @@ export const Page3a = () => {
               Get Access to Live and Interactive Classes by India’s Top
               Developers
             </h3>
-            <a href="/">
+            <Link to="/plans">
               <button className="first-box-item2-2-btn">
                 Get subscription
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="first-box-item3">

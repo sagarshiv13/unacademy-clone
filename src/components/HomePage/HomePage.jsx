@@ -27,27 +27,27 @@ export const Hompage = () => {
         <div className={Hstyle.PopulaGoal}>
           <p className={Hstyle.popular}>Popular Goals</p>
 
-          <p>
+          {/* <p>
             <a href="#" className={Hstyle.AnchorTag}>
               UPSC CSE - GS
             </a>
-          </p>
+          </p> */}
           <p>
             <Link to="/fullStack" className={Hstyle.AnchorTag}>
               FULL STACK DEVELOPER
-            </Link >
+            </Link>
           </p>
           <p>
-            <a href="#" className={Hstyle.AnchorTag}>
-              NEET-UG
-            </a>
+            <Link to="/programming" className={Hstyle.AnchorTag}>
+              Programming for Students
+            </Link>
           </p>
           <p>
-            <a href="#" className={Hstyle.AnchorTag}>
-              BANK EXAM
-            </a>
+            <Link to="/campus" className={Hstyle.AnchorTag}>
+              Campus Placement - IT Jobs
+            </Link>
           </p>
-          <p>
+          {/* <p>
             <a href="#" className={Hstyle.AnchorTag}>
               GATE & ESE
             </a>
@@ -56,7 +56,7 @@ export const Hompage = () => {
             <a href="#" className={Hstyle.AnchorTag}>
               IIT-JEE
             </a>
-          </p>
+          </p> */}
         </div>
         <div className={Hstyle.cardDiv}>
           <div className={Hstyle.card}>

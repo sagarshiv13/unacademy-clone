@@ -1,10 +1,9 @@
 .navbar_container {
     height: 81px;
-    width: 100%;
+    width: 90%;
     top: 0px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
     margin: auto;
     /* position: fixed; */
     /* z-index: 2; */

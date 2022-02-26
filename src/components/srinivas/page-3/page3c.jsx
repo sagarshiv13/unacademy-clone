@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 export const Page3c = () => {
   return (
@@ -16,16 +17,16 @@ export const Page3c = () => {
               </button>
             </a>
             <h1>
-            Crack Programming for Students with India's largest learning platform
+            Crack Campus Placement - IT Jobs with India's largest learning platform
             </h1>
             <h3>
             Get Plus subscription and access unlimited live and recorded courses from India's best educators
             </h3>
-            <a href="/">
+            <Link to="/plans">
               <button className="first-box-item2-2-btn">
                 Get subscription
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="first-box-item3">
@@ -104,8 +105,8 @@ export const Page3c = () => {
           <div className="pricing">
             <div className="pricing-item1">
               <h3>
-                Full Stack Development subscription starts <br />
-                from <span>₹6,667/month</span>
+              Campus Placement - IT Jobs subscription starts <br />
+                from <span>₹1,083/month</span>
               </h3>
             </div>
             <div className="pricing-item2">
@@ -180,7 +181,7 @@ export const Page3c = () => {
           <h1>Full Stack Development Subscription</h1>
           <div className="course-fee">
             <p>
-              12 months <br /> ₹80,000 Total <br /> (Incl. of all taxes)
+              12 months <br /> ₹13,000 Total <br /> (Incl. of all taxes)
               <br />
               <button>Subscription</button>
             </p>
