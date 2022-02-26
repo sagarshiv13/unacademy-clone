@@ -1,0 +1,54 @@
+.container{
+    margin-left: 10%;
+     width:100%;
+     font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size : 20px;
+     font-weight: 700px;
+     color: rgb(60, 72, 82)
+   }
+   .main{
+     display: block;
+     margin-left: 30px;
+     width: 100%;
+   }
+   h2{
+     margin-bottom: -20px;
+   }
+   .green{
+     color:rgb(10,190,129);
+     margin-top: 5px;
+     font-size: 14px;
+   }
+   input{
+     padding-left: 8%;
+     width:40%;
+     height:35px;
+     border-radius: 5px;
+     border:0.1px solid grey;
+     margin-left:30px ;
+     margin-bottom:20px
+   }
+   .btn{
+     background-color:rgb(10,190,129) ;
+     padding:1%;
+     width:150px;
+     height:44px;
+     margin-top:-5px
+   }
+   .footer{
+     margin-left: 10%;
+     margin-top:20%
+   }
+   .cros{
+     font-size: 31px;
+     margin-left: 30px;
+   }
+   .cros:hover{
+     cursor: pointer
+   }
+   .form{
+     margin-top:30px
+   }
+   .link{
+     margin-bottom: -30px;
+   }
