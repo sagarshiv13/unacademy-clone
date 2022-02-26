@@ -1,8 +1,8 @@
 
 import unacademy from '../../Icons/unacademy.svg'
-import downarrow from '../../Icons/downarrow.svg'
-import search from '../../Images/search.png'
-import { Hompage } from '../HomePage/HomePage'
+// import downarrow from '../../Icons/downarrow.svg'
+// import search from '../../Images/search.png'
+// import { Hompage } from '../HomePage/HomePage'
 // import styles from './navbar.module.css'
 
 export const Navbar = () => {

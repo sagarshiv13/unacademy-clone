@@ -1,16 +1,15 @@
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
-import './App.css';
-import { Footer } from './components/Footer/Footer';
-import { Hompage } from './components/HomePage/HomePage';
-import { Navbar } from './components/NavBar/navbar';
-
+import { Hompage } from "./components/HomePage/HomePage";
+import {PageTwo} from './components/mayur/page2'
 function App() {
   return (
     <div className="App">
-         <Navbar/>
-          <br/>
-          <Hompage/>
-         <Footer/>
+      <Routes>
+        <Route path="/" element={<Hompage />}></Route>
+        <Route path="/goal" element={<PageTwo/>}></Route>
+      </Routes>
     </div>
   );
 }

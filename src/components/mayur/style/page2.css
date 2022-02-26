@@ -1,0 +1,232 @@
+#page2{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-family: BlinkMacSystemFont,sans-serif!important;
+
+   
+}
+#page2top{
+    
+    text-align: left;
+    width: 80%;
+    height: 180px;
+    color: #3c4852;
+    border: 1px solid transparent;
+    line-height: 28px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background: url("../img/managegoal-test-prep-light.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+   
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;   
+}  
+#page2top>h1{
+    font-size: 40px;
+    }
+.page2topip{
+    display: flex;
+    width: 350px;
+    /* height: 55px; */
+    border: 1px solid lavender;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(196, 196, 196);
+    
+ 
+}
+.page2topip>img{
+    height: 5%;
+    width: 5%;
+    
+    margin-top: 6px;
+    
+    
+}
+.page2topip2{
+    width: 100%;
+    /* height: 50px; */
+    border: none;
+    margin-top: 2px;
+    outline: none;
+    font-size: 15px;
+    color: rgb(143, 143, 143);
+    padding: 2px;
+    font-family: inherit;
+    margin-left: 10px;
+   
+   
+}
+
+
+#pagetwoCont{
+    /* border:  1px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 15px; */
+   background-color: hsl(0,0%,98%);
+   margin: auto;
+}
+#leftside{
+   
+    width: 20%;
+    /* height: 500px; */
+    /* margin: left; */
+    margin: auto;
+}
+#page2list{
+    border: 1px solid transparent;
+    width: 90%;
+    overflow-y: auto;
+    height: 500px;
+    margin: auto;
+    padding: 9px;
+   
+}
+.leftbar{
+    text-decoration: none;
+    color: #7a8b94;
+    font-weight: normal;
+   
+    margin: 0px;
+
+}
+li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 44px;
+    text-align: left;
+
+    color: #7a8b94;
+
+    cursor: pointer;
+   
+}
+.selected {
+    border-bottom: 3px solid #11bb9a;
+    /* color: #11bb9a; */
+    font-weight: bolder;
+    color: red;
+    /* background-color: red; */
+    /* font-size: 20px; */
+  }
+  .header_link {
+    /* padding: 20px; */
+    /* color: #314d4a;
+    font-weight: normal;
+ 
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    outline:#3c4852; */
+    border: none;
+  }
+
+
+
+#page2list::-webkit-scrollbar{
+   /* background: white; */
+   width: 8px;
+   /* height: 105px; */
+
+}
+#page2list::-webkit-scrollbar-track{
+    /* background: rgb(235, 233, 233); */
+    border-radius: 5px;
+  
+   
+ }
+ #page2list::-webkit-scrollbar-thumb{
+    background: #a0a0a0;
+    border-radius: 5px;
+    height: 15px;
+    
+
+    
+ }
+ #page2list::-webkit-scrollbar-thumb:hover{
+     background-color: rgb(95, 95, 95);
+ }
+
+
+ /* -----------------------end of left side */
+
+ #rightside{
+     border:  1px solid transparent;
+     width: 65%;
+     height: 600px;
+     display: flex;
+     flex-direction: column;
+     overflow-y: scroll;
+     margin: auto;
+     /* padding-top: 19px; */
+ }
+
+ #rightside::-webkit-scrollbar{
+    /* background: white; */
+    width: 10px;
+    height: auto;
+ 
+ }
+ #rightside::-webkit-scrollbar-track{
+     /* background: rgb(235, 233, 233); */
+     border-radius: 5px;
+   
+    
+  }
+  #rightside::-webkit-scrollbar-thumb{
+     /* background: #a0a0a0; */
+     border-radius: 5px;
+     height: 50px;
+     
+ 
+     
+  }
+
+
+
+
+ .crosetabss{
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto;
+     /* border: 1px solid blue; */
+     margin-top: 25px;
+     grid-gap: 20px;
+   
+ }    
+
+ 
+/* ------------------------------corsename-------- */
+.pcorse{
+    font-size: 20px;
+    color: rgb(119, 118, 118);
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 35px;
+}
+.corsetab{
+    border: 1px solid transparent;
+    width: 220px;
+    padding: 15px;
+    /* padding-left: 15px; */
+    text-align: left;
+    border-radius: 10px;
+    /* margin-top: 50px; */
+    color: rgb(63, 63, 63);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    
+    gap: 15px;
+}
+
+ .corseimg{
+     /* justify-content: center; */
+     width: 20%;
+ }
+
