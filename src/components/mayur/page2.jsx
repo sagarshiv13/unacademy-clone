@@ -3,6 +3,7 @@ import { Footer } from "../Footer/Footer";
 import { useEffect, useRef, useState } from "react";
 import "../mayur/style/page2.css";
 import { Page2Top } from "./style/page2top";
+import {useNavigate} from "react-router-dom"
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
@@ -25,6 +26,7 @@ const scrollTo = (ele) => {
 
 export const PageTwo = () => {
   const [visibility, setVisibility] = useState();
+  const navigate= useNavigate()
 
   const headRef = useRef(null);
   const oneref = useRef(null);
@@ -129,6 +131,7 @@ export const PageTwo = () => {
           <div id="page2list" ref={headRef}>
             <ul>
               <li
+              
                 className="leftbar"
                 className={`header_link ${
                   visibility === "oneref" ? "selected" : ""
@@ -141,6 +144,7 @@ export const PageTwo = () => {
               </li>
 
               <li
+                 
                 className="leftbar"
                 className={`header_link ${
                   visibility === "tworef" ? "selected" : ""
@@ -153,6 +157,7 @@ export const PageTwo = () => {
               </li>
 
               <li
+                 
                 className="leftbar"
                 className={`header_link ${
                   visibility === "threeref" ? "selected" : ""
@@ -513,7 +518,12 @@ export const PageTwo = () => {
             Full Stack Development
           </p>
           <div className="crosetabss">
-            <div className="corsetab">
+            <div
+            onClick={()=>{
+              navigate("/fullStack")
+            }}
+            
+            className="corsetab">
               <div>
                 <img
                   className="corseimg"
@@ -532,7 +542,12 @@ export const PageTwo = () => {
           </p>
           <div className="crosetabss">
             <div className="corsetab">
-              <div>
+              <div
+              onClick={()=>{
+                navigate("/campus")
+              }}
+              
+              >
                 <img
                   className="corseimg"
                   src="https://static.uacdn.net/topology/LEARNCP/icon/origin.png"
@@ -550,7 +565,14 @@ export const PageTwo = () => {
           </p>
           <div className="crosetabss">
             <div className="corsetab">
-              <div>
+              <div
+               onClick={()=>{
+                navigate("/programming")
+              }}
+              
+              
+              
+              >
                 <img
                   className="corseimg"
                   src="https://static.uacdn.net/topology/test_default.png"
