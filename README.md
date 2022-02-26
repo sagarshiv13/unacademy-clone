@@ -7,13 +7,11 @@
 ## Deployment
 
 To deploy this project run
-###  `npm run start`
+<div>`npm run start`</div>
 
-link : <a href ="https://unacademy-clone.netlify.app/"></a>
+link : https://unacademy-clone.netlify.app/
 
 ## Features
-
-
 <li> Login and Sign up </li>
 <li>Payment Using Razorpay</li>
 <li>coupon code</li>
