@@ -3,7 +3,10 @@
     margin-left:190px;
 }
 .container1{
-  
+    background: url("../../mayur/img/managegoal-test-prep-light.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
     width:50%;
     font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size : 20px;
@@ -41,7 +44,7 @@
   
   .form1{
    margin-top:35px;
-   width:400px
+   width:350px
     
     /* margin-left: 28px; */
   }
