@@ -13,6 +13,7 @@
   .navbar_container_img > img {
     padding: 22px;
     padding-left: 104px;
+    cursor: pointer;
   }
   
   .nvbr_vertical_line {

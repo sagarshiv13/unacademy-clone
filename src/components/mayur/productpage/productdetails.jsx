@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { Popular } from "./popularedu"
 import "./prod.css"
-
+import {Navbar}from '../../NavBar/navbar'
 import {Productleft} from "./productleft"
 export const ProductDetails=()=>{
     const [data,setData]=useState([])
@@ -28,6 +28,8 @@ export const ProductDetails=()=>{
 
 
     return (
+        <>
+       <Navbar/>
  <div id="containerprod" >
      <div id="corstitle">      <img className="tutorimg1"  src="https://static.uacdn.net/topology/test_default.png" alt="" />
      Full Stack Development
@@ -77,6 +79,7 @@ export const ProductDetails=()=>{
         </div>
            <Popular/>     
         </div>
-      
+     </> 
     )
+
 }

@@ -3,10 +3,11 @@ import unacademy from "../../Icons/unacademy.svg";
 // import search from '../../Images/search.png'
 // import { Hompage } from '../HomePage/HomePage'
 import "./navbar.Style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../ContextApi/UserContextApi";
 import { useContext } from "react";
 export const Navbar = () => {
+  const navigate = useNavigate();
   const { login, statusHandler } = useContext(UserContext);
 
   const handleLogout = () => {
@@ -22,7 +23,13 @@ export const Navbar = () => {
     <>
       <div className="navbar_container">
         <div className="navbar_container_img">
-          <img src={unacademy} alt="img" />
+          <img
+            onClick={() => {
+              navigate("/");
+            }}
+            src={unacademy}
+            alt="img"
+          />
           <div className="nvbr_vertical_line"></div>
           {/* <button className="navbar_btn">CBSE Class 12
                         <img src={downarrow} alt="img" width={30} />
