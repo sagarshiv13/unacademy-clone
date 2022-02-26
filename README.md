@@ -7,13 +7,18 @@
 ## Deployment
 
 To deploy this project run
-# `npm run start`
+###  `npm run start`
+link : https://unacademy-clone.netlify.app/
 
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
+<li>
+Login and Sign up
+Payment Using Razorpay
+coupon code
+Apply coupon code to get discount
+User friendly UI
+</li>
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
